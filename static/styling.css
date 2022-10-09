@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightblue;
+    font-family: fantasy;
+}
+
+div#control{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 85vh;
+    width: 750px;
+}
+
+#main_form{
+    margin-top: 70px;
+}
+
+h1{
+    text-align: center;
+    margin:10px
+}
+
+form#manipulate{
+    text-align: center;
+    margin: 10px;
+}
+
+#modi1{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#modi2{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#modi2:hover{
+    background-color: red;
+    color: white;
+}
+
+#text_section{
+    border: 5px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: saddlebrown;
+    font-style: italic;
+    padding-left: 150px;
+}
+
+p#modi3{
+    text-align: center;
+    font-size: 19px;
+    color: black;
+    padding: 10px;
+
+}
+
+#also{
+    text-align: center;
+}
+
+#also1{
+    margin-left: 600px;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#also1:hover{
+    background-color: green;
+    color: black;
+}
+
+

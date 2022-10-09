@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+    Transcription page
+{% endblock %}
+
+
+
+{% block content %}
+    <div id="control">
+
+    <div id="main_form">
+
+        <h1>Convert Below</h1>
+           <form method="post" id="manipulate" enctype="multipart/form-data">
+               <input type="file" name="file" id="modi1">
+               <br>
+               <br>
+               <input type="submit" value="Transcribes" id="modi2">
+           </form>
+
+     {% if text != "" %}
+          <div id="text_section">
+              <h3>Below is the transcription of your audio hope you enjoyed</h3>
+              <p id="modi3"> {{ text }}</p>
+          </div>
+    {% endif %}
+
+    </div>
+
+    </div>
+{% endblock %}
+
+
+
+
