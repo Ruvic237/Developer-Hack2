@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request,redirect
+from flask import Flask, render_template, request, redirect
 import speech_recognition as sr
 
 app = Flask(__name__)  # Creating an instance of class Flask with argument name
@@ -12,7 +12,7 @@ def trans():
         file = request.files["file"]  # Storing the fileStorage of the selected file in browser from the system
 
         if file.filename == "":  # Checking if on submit no file was selected eg:(empty)
-            return redirect('error')
+            return redirect('errors')
 
         if file.filename != "":
             recognizer = sr.Recognizer()  # Creating an Instance of Recognizer class from speechRecognition package
@@ -21,16 +21,13 @@ def trans():
             with audioFile as source:
                 data = recognizer.record(source)  # A method of recognizer which reads audio files
                 transcription = recognizer.recognize_google(data)  # google API that permits transcription of audio (1 minute)
-    return render_template("convert.html", text=transcription)
+    return render_template("Transcrip.html", text=transcription)
 
 
 @app.errorhandler(404)
 def errors(error):
-    return render_template("error.html"), 404
+    return render_template("Error.html"), 404
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
-
+    app.run()
